@@ -31,3 +31,5 @@ After configuring the repo, you have three different actions:
 The parameters allowed are:
 - `-t`: Tags that will get elaborated
 - `-r`: Repo that will get elaborated
+- `-nt`: Tags that will get ignored
+- `-nr`: Repo that will get ignored
