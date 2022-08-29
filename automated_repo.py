@@ -92,6 +92,9 @@ def check(tags: list, repo: str):
         if match_tags(tags):
             return True
 
+    if args.tag is not [] or args.repo is not []:
+        return False
+
     if args.not_repo is not []:
         if ignore_repo(repo):
             return False
