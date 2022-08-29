@@ -85,20 +85,20 @@ def ignore_repo(repo: str):
 
 
 def check(tags: list, repo: str):
-    if args.repo is not []:
+    if args.repo:
         if match_repo(repo):
             return True
-    if args.tag is not []:
+    if args.tag:
         if match_tags(tags):
             return True
 
-    if args.tag is not [] or args.repo is not []:
+    if args.tag or args.repo:
         return False
 
-    if args.not_repo is not []:
+    if args.not_repo:
         if ignore_repo(repo):
             return False
-    if args.not_tag is not []:
+    if args.not_tag:
         if ignore_tags(tags):
             return False
 
